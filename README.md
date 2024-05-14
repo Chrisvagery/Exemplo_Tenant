@@ -63,8 +63,8 @@ Use o Thunder Client para fazer solicitações HTTP para criar tenants e documen
 
 1. Abra o Thunder Client no VS Code.
 2. Crie uma nova solicitação POST para cadastrar um tenant:
-  . Defina o método como POST.
-  .Insira a URL do endpoint para cadastrar o tenant (por exemplo, **http://localhost:3000/tenants)**.
+  -  Defina o método como POST.
+  - Insira a URL do endpoint para cadastrar o tenant (por exemplo, **http://localhost:3000/tenants)**.
 
   . No corpo da solicitação, forneça os dados do tenant em formato JSON. Por exemplo:
 
