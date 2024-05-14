@@ -74,13 +74,15 @@ Use o Thunder Client para fazer solicitações HTTP para criar tenants e documen
 3. Insira a URL do endpoint para cadastrar uma nota fiscal (por   exemplo, **http://localhost:3000/documentos-fiscais)**.
 4. No corpo da solicitação, forneça os dados da nota fiscal em formato JSON. Por exemplo:
 
-json
+```json
 {
   "numero_documento": "12345",
   "tipo_documento": "Nota Fiscal",
   "valor_total": 1000.00,
   "tenant_id": 1
 }
+```
+
 Certifique-se de definir o cabeçalho Content-Type como application/json.
 
 ## Fluxo de Funcionamento:
