@@ -30,12 +30,13 @@ Na implementação deste sistema multi-tenant, adotamos a estratégia de Schema-
 
 Armazena informações sobre cada inquilino, como nome e esquema associado.
  ## Exemplos codigos mysql
-
+```sql
 CREATE TABLE IF NOT EXISTS tenants (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) UNIQUE,
     esquema VARCHAR(100) UNIQUE
 );
+```
 
 2. **Tabela de documentos_fiscais:**
 
@@ -43,6 +44,7 @@ Armazena os documentos fiscais associados a cada inquilino, com referência ao e
 
 ## codigos mysql tabela documentos_fiscais
 
+```sql
 CREATE TABLE IF NOT EXISTS documentos_fiscais (
     id INT AUTO_INCREMENT PRIMARY KEY,
     numero_documento VARCHAR(100),
@@ -51,6 +53,8 @@ CREATE TABLE IF NOT EXISTS documentos_fiscais (
     tenant_id INT,
     FOREIGN KEY (tenant_id) REFERENCES tenants(id)
 );
+```
+
 
 #  Thunder Client
 Use o Thunder Client para fazer solicitações HTTP para criar tenants e documentos fiscais:
@@ -64,9 +68,12 @@ Use o Thunder Client para fazer solicitações HTTP para criar tenants e documen
 
   . No corpo da solicitação, forneça os dados do tenant em formato JSON. Por exemplo:
 
-    {
-  "nome": " Loja1  Departamentos Financeiros"
+    ```json
+{
+  "nome": "Minha Loja de Departamentos"
 }
+```
+
 
 ## Cadastro de Nota Fiscal
 1. Crie uma nova solicitação POST para cadastrar uma nota fiscal:
