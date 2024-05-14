@@ -68,7 +68,7 @@ Use o Thunder Client para fazer solicitações HTTP para criar tenants e documen
 
   . No corpo da solicitação, forneça os dados do tenant em formato JSON. Por exemplo:
 
-    ```json
+```json
 {
   "nome": "Minha Loja de Departamentos"
 }
