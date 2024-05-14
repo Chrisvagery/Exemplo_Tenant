@@ -21,9 +21,9 @@ Na implementação deste sistema multi-tenant, adotamos a estratégia de Schema-
 # Documentação da Implementação
 #### Tecnologias Utilizadas:
 
-.**Node.js e Express.js:** Utilizados para criar o servidor e as rotas da API.
-. **MySQL:** Banco de dados relacional utilizado para armazenar os dados.
-.**Pacote mysql para Node.js:** Utilizado para conectar e interagir com o banco de dados MySQL.
+- **Node.js e Express.js:** Utilizados para criar o servidor e as rotas da API.
+-  **MySQL:** Banco de dados relacional utilizado para armazenar os dados.
+- **Pacote mysql para Node.js:** Utilizado para conectar e interagir com o banco de dados MySQL.
 
 # Implementação do Banco de Dados:
 1. **Tabela de tenants (Inquilinos):**
