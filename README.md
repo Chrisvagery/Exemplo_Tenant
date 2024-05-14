@@ -8,9 +8,9 @@ O Schema-Based Multi-Tenancy é uma abordagem na qual cada inquilino (tenant) de
 Na implementação deste sistema multi-tenant, adotamos a estratégia de Schema-Based Multi-Tenancy. Isso significa que cada loja de departamentos (tenant) terá seu próprio esquema no banco de dados MySQL. Essa abordagem proporciona isolamento completo dos dados entre diferentes inquilinos, garantindo que não haja mistura de dados entre as lojas.
 
 ## Vantagens
-- **Isolamento de Dados:** Cada inquilino tem seu próprio espaço isolado no banco de dados, evitando conflitos e garantindo privacidade dos dados.
-- **Escalabilidade:** Permite escalar o sistema facilmente para acomodar novos inquilinos, adicionando novos esquemas conforme necessário.
-- **Facilidade de Gerenciamento:** Simplifica a gestão dos dados, uma vez que cada inquilino é tratado como uma entidade separada.
+-  Isolamento de Dados: Cada inquilino tem seu próprio espaço isolado no banco de dados, evitando conflitos e garantindo privacidade dos dados.
+- Escalabilidade: Permite escalar o sistema facilmente para acomodar novos inquilinos, adicionando novos esquemas conforme necessário.
+- Facilidade de Gerenciamento: Simplifica a gestão dos dados, uma vez que cada inquilino é tratado como uma entidade separada.
 
 ## Funcionalidades
 
